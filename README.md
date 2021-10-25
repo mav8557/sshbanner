@@ -1,5 +1,8 @@
-Role Name
+
+
+SSH Banner
 =========
+[![CI](https://github.com/mav8557/sshbanner/actions/workflows/ci.yml/badge.svg?branch=stable)](https://github.com/mav8557/sshbanner/actions/workflows/ci.yml)
 
 A brief description of the role goes here.
 
