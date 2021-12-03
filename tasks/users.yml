@@ -1,0 +1,16 @@
+- name: include users
+  include_vars:
+    dir: vars/users
+    name: usernames
+  
+- name: create users
+  user:
+    name: "{{ item.key }}" 
+    state: present
+  with_dict: "{{ usernames }}"
+
+- name: add ssh keys
+  authorized_key:
+    user: "{{ item.key }}"
+    key: "{{ item.value }}"
+  with_dict: "{{ usernames }}"

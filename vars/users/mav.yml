@@ -1,1 +1,2 @@
-mav: "sshkey"
+#mav: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBajQ6SNTFhlc6sUEkO5HbC1jbbwNz7frrfFOn8NXlE7 michael@tachibana"
+mav: "https://github.com/mav8557.keys"

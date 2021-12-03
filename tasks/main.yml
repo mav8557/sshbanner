@@ -1,12 +1,4 @@
 ---
 # tasks file for sshbanner
-- name: include users
-  include_vars:
-    dir: vars/users
-    name: usernames
-  
 - name: add users
-  user:
-    name: "{{ item.key }}" 
-    state: present
-  with_dict: "{{ usernames }}"
+  include_tasks: users.yml
